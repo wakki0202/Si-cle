@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>合同会社IDEAL RECRUIT</title>
+  <link href="css/Si-cle-hp.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-logo">IDEAL RECRUIT</div>
+    <div class="header-list">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li> <a href="#About-us">About us</a></li>
+        <li><a href="#Service">Service</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="top">
+    <h1><span>Open</span> <br>Your Business</h1>
+  </section>
+
+  <section id="About-us">
+    <div class="about-us-contents-one">
+      <div class="about-us-contents-two">
+        <h1>About us</h1>
+        <h2>理念</h2>
+        <div class="text">
+        <p>共感する仲間とともに、関わる全ての企業の理想の採用を実現する。
+          <br>
+          我々はお客様にお役立ちできないことを提案しません。
+          リソウノサイヨウが実現できなければ、売りつけるような真似は絶対にしません。
+        </br>
+          お客様自らその理想から離れる考え、行為をされていた場合、指摘することもございます。
+        <br>
+          それゆえに我々が提案する採用は自信にあるもの。
+        </br>
+          我々と共にリソウノサイヨウを実現させましょう！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Service">
+    <div class="Service">
+      <h1>Service</h1>
+      <div class="Service-contents">
+        <div class="EC">
+          <h2>コンサルティング</h2>
+          <div class="EC-list"></div>
+          <ul>
+            <li>＃ブランディング＆採用計画立案</li>
+            <li>＃採用マーケティング施策設計</li>
+            <li>＃ペルソナ詳細設計</li>
+          </ul>
+        </div>
+        <div class="WEB">
+          <h2>採用媒体</h2>
+          <div class="WEB-list"></div>
+          <ul>
+            <li>＃新卒媒体販売＆運用代行</li>
+            <li>＃中途採用媒体販売＆運用代行</li>
+            <li>＃Wantedly販売＆運用代行</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+
+  <footer>
+    <section class="FooterMain">
+      <div class="FooterMain__container">
+        <div class="FooterMain__info">
+          <h1>
+            合同会社IDEAL RECRUIT
+          </h1>
+          <div class="_address">
+            〒577-0806 大阪府東大阪市上小阪3-13-9
+          </div>
+          <div class="phonefaxnumber">
+            TEL:080-4709-1082/G-mail:godo.recruit@gmail.com
+          </div>
+          <div class="FooterMain__copy">
+            <small>Copyright © 2022 合同会社IDEAL RECRUIT</small>
+          </div>
+        </div>
+    </section>
+  </footer>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(function () {
+      setTimeout(function () {
+        $('.start img').fadeIn(1200);
+      }, 500); //0.5秒後にロゴをフェードイン!
+      setTimeout(function () {
+        $('.start img').fadeOut(400);
+      }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+    });
+
+      $(function () {
+        setTimeout(function () {
+          $('.start ').fadeIn(1100);
+        }, 500); //0.5秒後にロゴをフェードイン!
+        setTimeout(function () {
+          $('.start ').fadeOut(400);
+        }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+      });
+
+
+     let _window = $(window),
+      _header = $('header'),
+      heroBottom;
+
+    _window.on('scroll', function () {
+      heroBottom = $('h1').height();
+      if (_window.scrollTop() > heroBottom) {
+        _header.addClass('transform');
+      }
+      else {
+        _header.removeClass('transform');
+      }
+    });
+
+    _window.trigger('scroll');
+
+    $('h1').fadeIn(4000)
+
+    
+
+  </script>
+
+</body>
+
+</html>

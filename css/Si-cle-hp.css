@@ -1,0 +1,353 @@
+html { scroll-behavior: smooth;}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1540397106260-e24a507a08ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1961&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start img {
+	position: fixed;
+  padding-left: 100px;
+  height: 100%;
+	width: 80%;
+  margin: 0 auto;
+	z-index: 9999;
+  display: none;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  height: 80px;
+  transition: 0.6s;
+  z-index: 8900;
+}
+
+header.transform {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.6s;
+}
+
+.header-logo {
+  width: 50%;
+  font-size: 25px;
+  padding-left: 100px;
+  padding-top: 30px;
+  color: white;
+}
+
+.header-list {
+  width: 50%;
+  padding-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-list ul {
+  list-style: none;
+  display: flex;
+  margin-left: 150px;
+  color: white;
+}
+
+.header-list li {
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#top {
+  height: 100vh;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+}
+
+#top h1 {
+  font-size: 3vw;
+  padding-top: 200px;
+  padding-left: 500px;
+  display: none;
+  margin-top: -18px;
+}
+
+span {
+  font-size: 9vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+#About-us {
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+
+.about-us-contents-two {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#About-us h1 {
+  color: black;
+  font-size: 4vw;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#About-us h2{
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+#About-us .text{
+  display: block;
+  font-size: 2vw;
+}
+
+.text p{
+  text-align: left;
+}
+
+#Service {
+ margin-top: 80px;
+ margin-bottom: 80px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.Service {
+  width: 100%;
+  text-align: center;
+}
+
+#Service h1 {
+  color: white;
+  font-size: 4vw;
+}
+
+.Service-contents {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+.Service-contents h2 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-bottom: -15px;
+  font-size: 3vw;
+}
+
+.Service-contents ul {
+  font-size: 2vw;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.Service-contents li {
+  text-align: left;
+}
+
+.EC {
+  width: 40%;
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.WEB {
+  width: 40%;
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.EC-list {
+  text-align: center;
+  display: block;
+}
+
+.WEB-list {
+  text-align: center;
+  display: block;
+}
+
+footer {
+background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+}
+.FooterMain{
+  padding-top: 30px;
+  
+}
+
+.FooterMain__container {
+}
+
+.FooterMain__container h1 {
+  font-size: 3vw;
+  padding-bottom: 30px;
+}
+
+._address {
+  padding-bottom: 10px;
+}
+
+.phonefaxnumber {
+  padding-bottom: 80px;
+}
+.FooterMain__container {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 380px) {
+  body {
+ 
+}
+.start img {
+	position: fixed;
+  padding-left: 40px;
+  padding-top: 200px;
+  height: 25%;
+	width: 80%;
+  margin: 0 auto;
+	z-index: 9999;
+  display: none;
+}
+
+
+  .header-logo {
+    width: 30%;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 34px;
+  }
+
+  .header-list {
+    font-size: 9px;
+    width: 70%;
+    padding-top: 30px;
+  }
+
+  .header-list ul {
+    margin-left: 3px;
+  }
+
+  .header-list li {
+    padding-right: 15px;
+  }
+
+  span {
+    font-size: 18vw;
+  }
+
+  #top h1 {
+    font-size: 6vw;
+    padding-top: 250px;
+    padding-left: 0px;
+    display: none;
+  }
+
+  #About-us {
+    height: 80vh;
+  }
+
+  #About-us h1 {
+    width: 50%;
+    font-size: 10vw;
+    padding-left: 60px;
+  }
+
+  #About-us br {
+    display: none;
+  }
+
+  .about-us-contents-one {
+    background-size: 90%;
+    background-position: center top 100px;
+  }
+
+  #Service {
+    padding-bottom: 0px;
+  }
+
+  #Service h1 {
+    font-size: 12vw;
+  }
+
+  .Service-contents {
+    font-size: 8vw;
+    flex-direction: column;
+  }
+
+  .Service-contents h2 {
+    font-size: 9vw;
+  }
+
+  .Service-contents ul {
+    font-size: 5vw;
+  }
+
+  .EC {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .WEB {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+  }
+
+  footer {
+    height: 35vh;
+  }
+
+  .FooterMain__container {
+    padding-bottom: 30px;
+  }
+
+  .FooterMain__container h1 {
+    font-size: 9vw;
+  }
+
+  ._address {
+    font-size: 3vw;
+    padding-bottom: 10px;
+  }
+
+  .phonefaxnumber {
+    font-size: 3vw;
+    padding-bottom: 30px;
+  }
+}
